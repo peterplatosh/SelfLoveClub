@@ -52,7 +52,7 @@ navbar div#navlinks ul li a:active {
 }
 
 div#hamburger {
-    display: block;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     padding: 0 2vw;
