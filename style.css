@@ -1,0 +1,187 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    /* background: #F4BBC9; */
+    padding: 1vh 5vw;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    font-family: "Playfair Display";
+    font-weight: 500;
+}
+
+navbar .logo a {
+    text-decoration: none;
+    color:#000;
+    margin: 2vh 0;
+    font-style: italic;
+    font-weight: 700;
+}
+
+navbar div#navlinks ul {
+    display: flex;
+    padding: 0 2vw;
+    list-style: none;
+}
+
+navbar div#navlinks ul li a{
+    padding: 1vh 2vw;
+    text-decoration: none;
+    color: #000;
+}
+
+navbar div#navlinks ul li :hover {
+    background: #F4BBC9;
+    border-radius: 20px;
+}
+
+navbar div#navlinks ul li a:active {
+    background: #F4BBC9;
+    border-radius: 20px;
+}
+
+div#hamburger {
+    display: block;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 2vw;
+    list-style: none;
+}
+
+div#hamburger ul {
+    padding: 10px;
+    border-radius: 20px;
+    list-style: none;
+    text-align: right;
+    background: #F191AC;
+}
+
+div#hamburger ul li {
+    padding: 10px;
+}
+
+div#hamburger ul li a{
+    padding: 1vh 2vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+div#hamburger ul li :hover {
+    background: #F4BBC9;
+    border-radius: 20px;
+}
+
+div#hamburger ul li a:active {
+    background: #F4BBC9;
+    border-radius: 20px;
+}
+
+.button a {
+    background: #F191AC;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: "Open Sans";
+    font-size: small;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+navbar .menu {
+    text-decoration: none;
+    text-emphasis: none;
+    color: #000;
+}
+
+navbar .fa-bars {
+    display: none;
+    
+}
+
+@media screen and (max-width: 600px) {
+    navbar div {
+        display: inline;
+    }
+    navbar div#navlinks {
+        display: none;
+    }
+    navbar .fa-bars {
+        display: inline;
+        padding: 1vh 3vw;
+    }
+}
+
+section#cover {
+    margin: 5vh 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    section#cover {
+        flex-direction: column-reverse;
+    }
+}
+
+section#cover .introduction {
+    padding: 3%;
+    font-family: "Playfair Display";
+}
+
+section#cover .introduction h1{
+    font-weight: 700;
+}
+
+section#cover .introduction p{
+    font-family: "Open Sans";
+    padding-bottom: 10px;
+}
+
+section#cover img {
+    margin: 3%;
+    border-radius: 20px;
+}
+
+section#signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section#signup div {
+    margin: 5vh;
+}
+
+section#signup div h1 {
+    font-family: "Playfair Display";
+    font-weight: 800;
+}
+
+section#signup div p {
+    font-family: "Open Sans";
+}
+
+section#signup .button {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    section#signup iframe {
+        display: none;
+    }
+    section#signup .button {
+        display: inline;
+    }
+}
