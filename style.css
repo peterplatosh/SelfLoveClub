@@ -21,12 +21,22 @@ navbar {
     font-weight: 500;
 }
 
+navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+navbar .logo img {
+    height: 30px;
+}
+
 navbar .logo a {
     text-decoration: none;
     color:#000;
     margin: 2vh 0;
     font-style: italic;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 navbar div#navlinks ul {
@@ -43,6 +53,7 @@ navbar div#navlinks ul li a{
 
 navbar div#navlinks ul li :hover {
     background: #F4BBC9;
+    color: #fff;
     border-radius: 20px;
 }
 
@@ -122,7 +133,7 @@ navbar .fa-bars {
 }
 
 section#cover {
-    margin: 5vh 10%;
+    margin: 3vh 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -130,6 +141,13 @@ section#cover {
 @media screen and (max-width: 800px) {
     section#cover {
         flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    section#cover {
+        padding: 0px 15%;
     }
 }
 
@@ -147,9 +165,68 @@ section#cover .introduction p{
     padding-bottom: 10px;
 }
 
+section#cover .introduction div {
+    display: inline;
+}
+
+section#cover .introduction div i {
+    text-decoration: none;
+    color: #000;
+    padding-left: 15px;
+}
+
 section#cover img {
     margin: 3%;
     border-radius: 20px;
+    width: 40%;
+}
+
+@media screen and (max-width: 800px) {
+    section#cover img {
+        width: 90%;
+    }
+}
+
+section#quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #89d6ff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 3vh 20%;
+    font-family: "Open Sans";
+}
+
+@media screen and (max-width: 800px) {
+    section#quote {
+        margin: 3vh 10%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    section#quote {
+        margin: 3vh 30%;
+    }
+}
+
+section#quote h1 {
+    font-family: "Playfair Display";
+    margin: 0px;
+    font-weight: 700;
+}
+
+section#quote b {
+    display: none;
+}
+
+section#quote a {
+    text-decoration: none;
+    color:#fff;
+    background: #0075b2;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
 }
 
 section#signup {
@@ -184,4 +261,63 @@ section#signup .button {
     section#signup .button {
         display: inline;
     }
+}
+
+section#about {
+    margin: 0 20%;
+    padding-bottom: 10%;
+}
+
+@media screen and (max-width: 1300px) {
+    section#about {
+        margin: 0 10%;
+    }
+}
+
+section#about .title {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    section#about .title {
+        font-size: 2em;
+    }
+}
+
+section#about section#founders .person{
+    display: flex;
+    font-family: "Open Sans";
+}
+
+section#about section#founders .person-alt{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 800px) {
+    section#about section#founders .person {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+}
+
+
+section#about section#founders .bio {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+section#about section#founders .socials a{
+    font-size: 1.5em;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+section#about section#founders .photo {
+    width: 30%;
+    border-radius: 50%;
 }
